@@ -1,0 +1,74 @@
+[2022-08-03 23:43:30,010] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: ltv-pipeline.query-table manual__2022-08-03T23:42:42.406297+00:00 [queued]>
+[2022-08-03 23:43:30,022] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: ltv-pipeline.query-table manual__2022-08-03T23:42:42.406297+00:00 [queued]>
+[2022-08-03 23:43:30,025] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-03 23:43:30,029] {taskinstance.py:1377} INFO - Starting attempt 1 of 1
+[2022-08-03 23:43:30,032] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-03 23:43:30,049] {taskinstance.py:1397} INFO - Executing <Task(PythonOperator): query-table> on 2022-08-03 23:42:42.406297+00:00
+[2022-08-03 23:43:30,062] {standard_task_runner.py:52} INFO - Started process 8069 to run task
+[2022-08-03 23:43:30,069] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'ltv-pipeline', 'query-table', 'manual__2022-08-03T23:42:42.406297+00:00', '--job-id', '303', '--raw', '--subdir', 'DAGS_FOLDER/dag-test.py', '--cfg-path', '/tmp/tmpqurxs87g', '--error-file', '/tmp/tmpcjj9mql3']
+[2022-08-03 23:43:30,074] {standard_task_runner.py:80} INFO - Job 303: Subtask query-table
+[2022-08-03 23:43:30,177] {task_command.py:371} INFO - Running <TaskInstance: ltv-pipeline.query-table manual__2022-08-03T23:42:42.406297+00:00 [running]> on host 3b0f05b8acbc
+[2022-08-03 23:43:30,363] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=ltv-pipeline
+AIRFLOW_CTX_TASK_ID=query-table
+AIRFLOW_CTX_EXECUTION_DATE=2022-08-03T23:42:42.406297+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-08-03T23:42:42.406297+00:00
+[2022-08-03 23:43:30,380] {logging_mixin.py:115} INFO - Testing hook
+[2022-08-03 23:43:30,439] {base.py:68} INFO - Using connection ID 'postgres' for task execution.
+[2022-08-03 23:43:30,470] {logging_mixin.py:115} INFO - [('38b2f52e-8f5d', '1GCWGFCF3F1284719', '20998', '115879', 'W1T503168C', '2015', 'Chevrolet', 'Express Cargo', 'Work Van', 'Cargo Van', 'Truck', 'RWD', 'Automatic', 'E85 / Unleaded', '4.8', 'V', 'nissan ellicott city', '8569 Baltimore National Pike', 'Ellicott City', 'MD', '21043'), ('97ba4955-ccf0', 'WBY7Z8C59JVB87514', '27921', '7339', 'P33243', '2018', 'BMW', 'i3', 's', 'Hatchback', 'Car', 'RWD', 'Automatic', 'Electric / Premium Unleaded', '0.6', 'I', 'hendrick honda pompano beach', '5381 N Federal Highway', 'Pompano Beach', 'FL', '33064'), ('be1da9fd-0f34', 'ML32F4FJ2JHF10325', '11055', '39798', 'WM2091A', '2018', 'Mitsubishi', 'Mirage G4', 'SE', 'Sedan', 'Car', 'FWD', 'Automatic', 'Unleaded', '1.2', 'I', 'russ darrow toyota', '2700 West Washington St.', 'West Bend', 'WI', '53095'), ('84327e45-6cb6', '1GCPTEE15K1291189', '52997', '28568', '9U2Y425A', '2019', 'Chevrolet', 'Colorado', 'ZR2', 'Pickup', 'Truck', '4WD', 'Automatic', 'Diesel', '2.8', 'I', 'young kia', '308 North Main Street', 'Layton', 'UT', '84041'), ('cde691c3-91dd', '1G2AL18F087312093', None, '188485', 'T36625A', '2008', 'Pontiac', 'G5', 'Base', 'Coupe', 'Car', 'FWD', 'Automatic', 'Unleaded', '2.2', 'I', 'pappas toyota', '10011 Spencer Rd', 'Saint Peters', 'MO', '63376'), ('e6b0a17c-6321', 'WBY1Z4C54FV500763', None, '54276', 'T15046A', '2015', 'BMW', 'i3', 'Giga World', 'Hatchback', 'Car', 'RWD', 'Automatic', 'Electric / Premium Unleaded', '0.6', 'I', 'crossroads ford of kernersville', '1330 Highway 66 South', 'Kernersville', 'NC', '27284'), ('43847b9a-6fed', '1B7HC16Y8YS543285', '3995', '137537', 'BP8246A', '2000', 'Dodge', 'Ram Pickup', 'ST', 'Pickup', 'Truck', 'RWD', 'Manual', 'Unleaded', '5.2', 'V', 'baumann auto group', '2379 W. State St.', 'Fremont', 'OH', '43420'), ('8d10256f-3be9', '3GNBABDBXAS598032', '6500', '74274', '2104839A', '2010', 'Chevrolet', 'HHR', 'LT', 'Mini Mpv', 'Car', 'FWD', 'Automatic', 'E85 / Unleaded', '2.2', 'I', 'volkswagen of grand blanc', '6201 S Saginaw Rd', 'Grand Blanc', 'MI', '48439'), ('d8d6dfed-e273', '5YMCY0C08L9D04057', '105974', '9589', 'CMR269761A', '2020', 'BMW', 'X6 M', 'Base', 'SUV', 'Truck', '4WD', 'Automatic', 'Premium Unleaded', '4.4', 'V', 'braman miami', '2060 Biscayne Boulevard', 'Miami', 'FL', '33137'), ('3c539e0f-3eb8', '1GCGSCE15G1195013', '23024', '131286', 'PH195013', '2016', 'Chevrolet', 'Colorado', 'LT', 'Pickup', 'Truck', 'RWD', 'Automatic', 'Diesel', '2.8', 'I', 'jefferson city autoplex', '3215 Missouri Blvd', 'Jefferson City', 'MO', '65109')]
+[2022-08-03 23:43:30,508] {base.py:68} INFO - Using connection ID 'postgres' for task execution.
+[2022-08-03 23:43:31,623] {logging_mixin.py:115} INFO - TOTAL RECORDS: 499999
+[2022-08-03 23:43:31,634] {base.py:68} INFO - Using connection ID 'postgres' for task execution.
+[2022-08-03 23:43:33,349] {logging_mixin.py:115} INFO - TOTAL unique VINS: 171520
+[2022-08-03 23:43:33,369] {base.py:68} INFO - Using connection ID 'postgres' for task execution.
+[2022-08-03 23:43:33,484] {logging_mixin.py:115} INFO - TOTAL unique VINS: 448444
+[2022-08-03 23:43:33,506] {base.py:68} INFO - Using connection ID 'postgres' for task execution.
+[2022-08-03 23:43:33,519] {dbapi.py:231} INFO - Running statement: DELETE FROM vehicles WHERE price = 'price' ;, parameters: None
+[2022-08-03 23:43:33,614] {dbapi.py:239} INFO - Rows affected: 1
+[2022-08-03 23:43:33,640] {base.py:68} INFO - Using connection ID 'postgres' for task execution.
+[2022-08-03 23:43:35,262] {logging_mixin.py:115} INFO - (499998, 5)
+[2022-08-03 23:43:35,303] {base.py:68} INFO - Using connection ID 'postgres' for task execution.
+[2022-08-03 23:44:04,771] {logging_mixin.py:115} INFO - SHAPES PRE ALTER TABLE: (499998, 21)
+[2022-08-03 23:44:04,994] {base.py:68} INFO - Using connection ID 'postgres' for task execution.
+[2022-08-03 23:44:05,033] {dbapi.py:231} INFO - Running statement: 
+                ALTER TABLE vehicles
+                ALTER COLUMN price TYPE INTEGER USING NULLIF(price,'')::integer
+                ,ALTER COLUMN miles TYPE INTEGER USING NULLIF(miles,'')::integer
+                ,ALTER COLUMN year TYPE INTEGER USING NULLIF(year,'')::integer
+                ,ALTER COLUMN engine_size TYPE DOUBLE PRECISION USING NULLIF(engine_size, '')::DOUBLE PRECISION
+                ,ALTER COLUMN zip TYPE INTEGER USING NULLIF(NULLIF(NULLIF(zip, 'J0J 1J0'),'V1N 1H9'),'')::integer
+                ;
+    , parameters: None
+[2022-08-03 23:44:11,538] {base.py:68} INFO - Using connection ID 'postgres' for task execution.
+[2022-08-03 23:44:19,079] {logging_mixin.py:115} INFO - SHAPES POST ALTER TABLE: (499998, 21)
+[2022-08-03 23:44:19,149] {base.py:68} INFO - Using connection ID 'postgres' for task execution.
+[2022-08-03 23:44:19,652] {logging_mixin.py:115} INFO -                               0
+price_lost_records        51555
+miles_lost_records         8815
+year_lost_records            60
+engine_size_lost_records  51852
+zip_lost_records           1057
+[2022-08-03 23:44:19,667] {base.py:68} INFO - Using connection ID 'postgres' for task execution.
+[2022-08-03 23:44:24,871] {logging_mixin.py:115} INFO - SHAPES BEFORE  ALTER TABLE: (499998, 21)
+[2022-08-03 23:44:24,942] {base.py:68} INFO - Using connection ID 'postgres' for task execution.
+[2022-08-03 23:44:25,434] {logging_mixin.py:115} INFO -            city  count
+0       Houston     80
+1       Orlando     70
+2       Medford     56
+3     Arlington     50
+4       Raleigh     44
+5        Dallas     42
+6         Tampa     38
+7  Indianapolis     38
+8      Columbia     36
+9  Jacksonville     36
+[2022-08-03 23:44:25,454] {python.py:173} INFO - Done. Returned value was: None
+[2022-08-03 23:44:25,997] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=ltv-pipeline, task_id=query-table, execution_date=20220803T234242, start_date=20220803T234330, end_date=20220803T234425
+[2022-08-03 23:44:27,067] {local_task_job.py:221} WARNING - State of this instance has been externally set to success. Terminating instance.
+[2022-08-03 23:44:27,186] {process_utils.py:129} INFO - Sending Signals.SIGTERM to group 8069. PIDs of all processes in the group: [8069]
+[2022-08-03 23:44:27,201] {process_utils.py:80} INFO - Sending the signal Signals.SIGTERM to group 8069
+[2022-08-03 23:44:27,776] {process_utils.py:75} INFO - Process psutil.Process(pid=8069, status='terminated', exitcode=0, started='23:43:29') (8069) terminated with exit code 0

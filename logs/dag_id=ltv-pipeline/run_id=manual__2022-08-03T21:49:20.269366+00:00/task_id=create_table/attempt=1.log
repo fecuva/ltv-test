@@ -1,0 +1,47 @@
+[2022-08-03 21:49:45,640] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: ltv-pipeline.create_table manual__2022-08-03T21:49:20.269366+00:00 [queued]>
+[2022-08-03 21:49:45,668] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: ltv-pipeline.create_table manual__2022-08-03T21:49:20.269366+00:00 [queued]>
+[2022-08-03 21:49:45,677] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-03 21:49:45,684] {taskinstance.py:1377} INFO - Starting attempt 1 of 1
+[2022-08-03 21:49:45,688] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-03 21:49:45,723] {taskinstance.py:1397} INFO - Executing <Task(PostgresOperator): create_table> on 2022-08-03 21:49:20.269366+00:00
+[2022-08-03 21:49:45,738] {standard_task_runner.py:52} INFO - Started process 3298 to run task
+[2022-08-03 21:49:45,743] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'ltv-pipeline', 'create_table', 'manual__2022-08-03T21:49:20.269366+00:00', '--job-id', '189', '--raw', '--subdir', 'DAGS_FOLDER/dag-test.py', '--cfg-path', '/tmp/tmpphwdtnc0', '--error-file', '/tmp/tmp6ox4eqog']
+[2022-08-03 21:49:45,749] {standard_task_runner.py:80} INFO - Job 189: Subtask create_table
+[2022-08-03 21:49:45,872] {task_command.py:371} INFO - Running <TaskInstance: ltv-pipeline.create_table manual__2022-08-03T21:49:20.269366+00:00 [running]> on host 3b0f05b8acbc
+[2022-08-03 21:49:46,066] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=ltv-pipeline
+AIRFLOW_CTX_TASK_ID=create_table
+AIRFLOW_CTX_EXECUTION_DATE=2022-08-03T21:49:20.269366+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-08-03T21:49:20.269366+00:00
+[2022-08-03 21:49:46,111] {base.py:68} INFO - Using connection ID 'postgres' for task execution.
+[2022-08-03 21:49:46,133] {dbapi.py:231} INFO - Running statement: CREATE TABLE vehicles (
+                    id TEXT,
+                    vin TEXT,
+                    price TEXT,
+                    miles TEXT, 
+                    stock_no TEXT, 
+                    year TEXT, 
+                    make TEXT, 
+                    model TEXT, 
+                    trim TEXT, 
+                    body_type TEXT, 
+                    vehicle_type TEXT, 
+                    drivetrain TEXT, 
+                    transmission TEXT, 
+                    fuel_type TEXT, 
+                    engine_size TEXT, 
+                    engine_block TEXT,
+                    seller_name TEXT, 
+                    street TEXT, 
+                    city TEXT, 
+                    state TEXT, 
+                    zip  TEXT
+                    );      
+                , parameters: None
+[2022-08-03 21:49:46,248] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=ltv-pipeline, task_id=create_table, execution_date=20220803T214920, start_date=20220803T214945, end_date=20220803T214946
+[2022-08-03 21:49:46,440] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-08-03 21:49:46,626] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

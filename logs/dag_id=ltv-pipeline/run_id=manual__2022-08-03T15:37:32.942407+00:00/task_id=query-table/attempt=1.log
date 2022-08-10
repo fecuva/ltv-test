@@ -1,0 +1,30 @@
+[2022-08-03 15:37:44,074] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: ltv-pipeline.query-table manual__2022-08-03T15:37:32.942407+00:00 [queued]>
+[2022-08-03 15:37:44,201] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: ltv-pipeline.query-table manual__2022-08-03T15:37:32.942407+00:00 [queued]>
+[2022-08-03 15:37:44,219] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-03 15:37:44,241] {taskinstance.py:1377} INFO - Starting attempt 1 of 1
+[2022-08-03 15:37:44,255] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-03 15:37:44,646] {taskinstance.py:1397} INFO - Executing <Task(PythonOperator): query-table> on 2022-08-03 15:37:32.942407+00:00
+[2022-08-03 15:37:44,922] {standard_task_runner.py:52} INFO - Started process 890 to run task
+[2022-08-03 15:37:44,969] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'ltv-pipeline', 'query-table', 'manual__2022-08-03T15:37:32.942407+00:00', '--job-id', '41', '--raw', '--subdir', 'DAGS_FOLDER/dag-test.py', '--cfg-path', '/tmp/tmp3k21r51_', '--error-file', '/tmp/tmphe1izg5l']
+[2022-08-03 15:37:45,027] {standard_task_runner.py:80} INFO - Job 41: Subtask query-table
+[2022-08-03 15:37:45,721] {task_command.py:371} INFO - Running <TaskInstance: ltv-pipeline.query-table manual__2022-08-03T15:37:32.942407+00:00 [running]> on host 3b0f05b8acbc
+[2022-08-03 15:37:46,003] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=ltv-pipeline
+AIRFLOW_CTX_TASK_ID=query-table
+AIRFLOW_CTX_EXECUTION_DATE=2022-08-03T15:37:32.942407+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-08-03T15:37:32.942407+00:00
+[2022-08-03 15:37:46,017] {logging_mixin.py:115} INFO - Testing hook
+[2022-08-03 15:37:46,081] {base.py:68} INFO - Using connection ID 'postgres' for task execution.
+[2022-08-03 15:37:46,101] {logging_mixin.py:115} INFO - []
+[2022-08-03 15:37:46,137] {base.py:68} INFO - Using connection ID 'postgres' for task execution.
+[2022-08-03 15:37:46,200] {logging_mixin.py:115} INFO - [('pg_toast',), ('pg_catalog',), ('public',), ('information_schema',)]
+[2022-08-03 15:37:46,205] {logging_mixin.py:115} INFO - PRINT PATH: ['dags', 'logs', 'webserver_config.py', 'plugins', '***-worker.pid', '***.cfg', 'files']
+[2022-08-03 15:37:46,231] {logging_mixin.py:115} INFO - PRINT PATH: ['test.csv', 'vehicle_challenge.csv.gz']
+[2022-08-03 15:37:46,238] {python.py:173} INFO - Done. Returned value was: None
+[2022-08-03 15:37:46,310] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=ltv-pipeline, task_id=query-table, execution_date=20220803T153732, start_date=20220803T153744, end_date=20220803T153746
+[2022-08-03 15:37:46,654] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-08-03 15:37:47,215] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,24 @@
+[2022-08-03 23:24:10,146] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: ltv-pipeline.drop_table manual__2022-08-03T23:23:57.249582+00:00 [queued]>
+[2022-08-03 23:24:10,247] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: ltv-pipeline.drop_table manual__2022-08-03T23:23:57.249582+00:00 [queued]>
+[2022-08-03 23:24:10,269] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-03 23:24:10,280] {taskinstance.py:1377} INFO - Starting attempt 1 of 1
+[2022-08-03 23:24:10,295] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-03 23:24:10,377] {taskinstance.py:1397} INFO - Executing <Task(PostgresOperator): drop_table> on 2022-08-03 23:23:57.249582+00:00
+[2022-08-03 23:24:10,489] {standard_task_runner.py:52} INFO - Started process 7244 to run task
+[2022-08-03 23:24:10,501] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'ltv-pipeline', 'drop_table', 'manual__2022-08-03T23:23:57.249582+00:00', '--job-id', '280', '--raw', '--subdir', 'DAGS_FOLDER/dag-test.py', '--cfg-path', '/tmp/tmp2nwohm24', '--error-file', '/tmp/tmpz6954ee6']
+[2022-08-03 23:24:10,512] {standard_task_runner.py:80} INFO - Job 280: Subtask drop_table
+[2022-08-03 23:24:11,054] {task_command.py:371} INFO - Running <TaskInstance: ltv-pipeline.drop_table manual__2022-08-03T23:23:57.249582+00:00 [running]> on host 3b0f05b8acbc
+[2022-08-03 23:24:11,466] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=ltv-pipeline
+AIRFLOW_CTX_TASK_ID=drop_table
+AIRFLOW_CTX_EXECUTION_DATE=2022-08-03T23:23:57.249582+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-08-03T23:23:57.249582+00:00
+[2022-08-03 23:24:11,539] {base.py:68} INFO - Using connection ID 'postgres' for task execution.
+[2022-08-03 23:24:11,569] {dbapi.py:231} INFO - Running statement: DROP TABLE IF EXISTS vehicles, parameters: None
+[2022-08-03 23:24:11,913] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=ltv-pipeline, task_id=drop_table, execution_date=20220803T232357, start_date=20220803T232410, end_date=20220803T232411
+[2022-08-03 23:24:12,001] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-08-03 23:24:12,093] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

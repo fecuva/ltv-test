@@ -1,0 +1,25 @@
+[2022-08-03 22:48:21,112] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: ltv-pipeline.load-data manual__2022-08-03T22:47:11.145640+00:00 [queued]>
+[2022-08-03 22:48:21,175] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: ltv-pipeline.load-data manual__2022-08-03T22:47:11.145640+00:00 [queued]>
+[2022-08-03 22:48:21,198] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-03 22:48:21,228] {taskinstance.py:1377} INFO - Starting attempt 1 of 1
+[2022-08-03 22:48:21,239] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2022-08-03 22:48:21,316] {taskinstance.py:1397} INFO - Executing <Task(PythonOperator): load-data> on 2022-08-03 22:47:11.145640+00:00
+[2022-08-03 22:48:21,357] {standard_task_runner.py:52} INFO - Started process 5800 to run task
+[2022-08-03 22:48:21,370] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'ltv-pipeline', 'load-data', 'manual__2022-08-03T22:47:11.145640+00:00', '--job-id', '259', '--raw', '--subdir', 'DAGS_FOLDER/dag-test.py', '--cfg-path', '/tmp/tmpqtoyi4u_', '--error-file', '/tmp/tmp1k8yodmr']
+[2022-08-03 22:48:21,389] {standard_task_runner.py:80} INFO - Job 259: Subtask load-data
+[2022-08-03 22:48:21,641] {task_command.py:371} INFO - Running <TaskInstance: ltv-pipeline.load-data manual__2022-08-03T22:47:11.145640+00:00 [running]> on host 3b0f05b8acbc
+[2022-08-03 22:48:21,876] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=ltv-pipeline
+AIRFLOW_CTX_TASK_ID=load-data
+AIRFLOW_CTX_EXECUTION_DATE=2022-08-03T22:47:11.145640+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-08-03T22:47:11.145640+00:00
+[2022-08-03 22:48:21,892] {postgres.py:127} INFO - Running copy expert: COPY vehicles FROM STDIN WITH DELIMITER ',' CSV HEADER , filename: files/vehicle_challenge.csv
+[2022-08-03 22:48:21,940] {base.py:68} INFO - Using connection ID 'postgres' for task execution.
+[2022-08-03 22:48:38,108] {python.py:173} INFO - Done. Returned value was: None
+[2022-08-03 22:48:39,791] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=ltv-pipeline, task_id=load-data, execution_date=20220803T224711, start_date=20220803T224821, end_date=20220803T224839
+[2022-08-03 22:48:40,423] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-08-03 22:48:40,762] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
