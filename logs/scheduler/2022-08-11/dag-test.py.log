@@ -1,0 +1,164 @@
+[2022-08-11 19:44:21,760] {processor.py:153} INFO - Started process (PID=34) to work on /opt/airflow/dags/dag-test.py
+[2022-08-11 19:44:21,762] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag-test.py for tasks to queue
+[2022-08-11 19:44:21,764] {logging_mixin.py:115} INFO - [2022-08-11 19:44:21,764] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag-test.py
+[2022-08-11 19:44:22,394] {processor.py:651} INFO - DAG(s) dict_keys(['ltv-pipeline']) retrieved from /opt/airflow/dags/dag-test.py
+[2022-08-11 19:44:22,444] {logging_mixin.py:115} INFO - [2022-08-11 19:44:22,443] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-11 19:44:22,481] {logging_mixin.py:115} INFO - [2022-08-11 19:44:22,481] {dag.py:2972} INFO - Setting next_dagrun for ltv-pipeline to None, run_after=None
+[2022-08-11 19:44:22,547] {processor.py:161} INFO - Processing /opt/airflow/dags/dag-test.py took 0.796 seconds
+[2022-08-11 19:44:52,921] {processor.py:153} INFO - Started process (PID=97) to work on /opt/airflow/dags/dag-test.py
+[2022-08-11 19:44:52,937] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag-test.py for tasks to queue
+[2022-08-11 19:44:52,949] {logging_mixin.py:115} INFO - [2022-08-11 19:44:52,949] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag-test.py
+[2022-08-11 19:44:53,679] {processor.py:651} INFO - DAG(s) dict_keys(['ltv-pipeline']) retrieved from /opt/airflow/dags/dag-test.py
+[2022-08-11 19:44:53,705] {logging_mixin.py:115} INFO - [2022-08-11 19:44:53,705] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-11 19:44:53,730] {logging_mixin.py:115} INFO - [2022-08-11 19:44:53,730] {dag.py:2972} INFO - Setting next_dagrun for ltv-pipeline to None, run_after=None
+[2022-08-11 19:44:53,756] {processor.py:161} INFO - Processing /opt/airflow/dags/dag-test.py took 0.875 seconds
+[2022-08-11 19:45:23,937] {processor.py:153} INFO - Started process (PID=160) to work on /opt/airflow/dags/dag-test.py
+[2022-08-11 19:45:23,941] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag-test.py for tasks to queue
+[2022-08-11 19:45:23,945] {logging_mixin.py:115} INFO - [2022-08-11 19:45:23,945] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag-test.py
+[2022-08-11 19:45:24,384] {processor.py:651} INFO - DAG(s) dict_keys(['ltv-pipeline']) retrieved from /opt/airflow/dags/dag-test.py
+[2022-08-11 19:45:24,398] {logging_mixin.py:115} INFO - [2022-08-11 19:45:24,398] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-11 19:45:24,411] {logging_mixin.py:115} INFO - [2022-08-11 19:45:24,411] {dag.py:2972} INFO - Setting next_dagrun for ltv-pipeline to None, run_after=None
+[2022-08-11 19:45:24,420] {processor.py:161} INFO - Processing /opt/airflow/dags/dag-test.py took 0.489 seconds
+[2022-08-11 19:45:54,738] {processor.py:153} INFO - Started process (PID=214) to work on /opt/airflow/dags/dag-test.py
+[2022-08-11 19:45:54,741] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag-test.py for tasks to queue
+[2022-08-11 19:45:54,743] {logging_mixin.py:115} INFO - [2022-08-11 19:45:54,743] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag-test.py
+[2022-08-11 19:45:55,169] {processor.py:651} INFO - DAG(s) dict_keys(['ltv-pipeline']) retrieved from /opt/airflow/dags/dag-test.py
+[2022-08-11 19:45:55,185] {logging_mixin.py:115} INFO - [2022-08-11 19:45:55,185] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-11 19:45:55,198] {logging_mixin.py:115} INFO - [2022-08-11 19:45:55,198] {dag.py:2972} INFO - Setting next_dagrun for ltv-pipeline to None, run_after=None
+[2022-08-11 19:45:55,205] {processor.py:161} INFO - Processing /opt/airflow/dags/dag-test.py took 0.477 seconds
+[2022-08-11 19:46:25,481] {processor.py:153} INFO - Started process (PID=277) to work on /opt/airflow/dags/dag-test.py
+[2022-08-11 19:46:25,482] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag-test.py for tasks to queue
+[2022-08-11 19:46:25,483] {logging_mixin.py:115} INFO - [2022-08-11 19:46:25,483] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag-test.py
+[2022-08-11 19:46:25,780] {processor.py:651} INFO - DAG(s) dict_keys(['ltv-pipeline']) retrieved from /opt/airflow/dags/dag-test.py
+[2022-08-11 19:46:25,800] {logging_mixin.py:115} INFO - [2022-08-11 19:46:25,800] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-11 19:46:25,815] {logging_mixin.py:115} INFO - [2022-08-11 19:46:25,815] {dag.py:2972} INFO - Setting next_dagrun for ltv-pipeline to None, run_after=None
+[2022-08-11 19:46:25,824] {processor.py:161} INFO - Processing /opt/airflow/dags/dag-test.py took 0.345 seconds
+[2022-08-11 19:46:55,950] {processor.py:153} INFO - Started process (PID=341) to work on /opt/airflow/dags/dag-test.py
+[2022-08-11 19:46:55,952] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag-test.py for tasks to queue
+[2022-08-11 19:46:55,953] {logging_mixin.py:115} INFO - [2022-08-11 19:46:55,953] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag-test.py
+[2022-08-11 19:46:56,329] {processor.py:651} INFO - DAG(s) dict_keys(['ltv-pipeline']) retrieved from /opt/airflow/dags/dag-test.py
+[2022-08-11 19:46:56,351] {logging_mixin.py:115} INFO - [2022-08-11 19:46:56,350] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-11 19:46:56,365] {logging_mixin.py:115} INFO - [2022-08-11 19:46:56,365] {dag.py:2972} INFO - Setting next_dagrun for ltv-pipeline to None, run_after=None
+[2022-08-11 19:46:56,374] {processor.py:161} INFO - Processing /opt/airflow/dags/dag-test.py took 0.427 seconds
+[2022-08-11 19:47:17,269] {processor.py:153} INFO - Started process (PID=392) to work on /opt/airflow/dags/dag-test.py
+[2022-08-11 19:47:17,271] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag-test.py for tasks to queue
+[2022-08-11 19:47:17,273] {logging_mixin.py:115} INFO - [2022-08-11 19:47:17,273] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag-test.py
+[2022-08-11 19:47:17,671] {processor.py:651} INFO - DAG(s) dict_keys(['ltv-pipeline']) retrieved from /opt/airflow/dags/dag-test.py
+[2022-08-11 19:47:17,688] {logging_mixin.py:115} INFO - [2022-08-11 19:47:17,688] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-11 19:47:17,705] {logging_mixin.py:115} INFO - [2022-08-11 19:47:17,705] {dag.py:2972} INFO - Setting next_dagrun for ltv-pipeline to None, run_after=None
+[2022-08-11 19:47:17,717] {processor.py:161} INFO - Processing /opt/airflow/dags/dag-test.py took 0.454 seconds
+[2022-08-11 19:47:47,988] {processor.py:153} INFO - Started process (PID=446) to work on /opt/airflow/dags/dag-test.py
+[2022-08-11 19:47:47,990] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag-test.py for tasks to queue
+[2022-08-11 19:47:47,991] {logging_mixin.py:115} INFO - [2022-08-11 19:47:47,991] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag-test.py
+[2022-08-11 19:47:48,281] {processor.py:651} INFO - DAG(s) dict_keys(['ltv-pipeline']) retrieved from /opt/airflow/dags/dag-test.py
+[2022-08-11 19:47:48,297] {logging_mixin.py:115} INFO - [2022-08-11 19:47:48,296] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-11 19:47:48,310] {logging_mixin.py:115} INFO - [2022-08-11 19:47:48,310] {dag.py:2972} INFO - Setting next_dagrun for ltv-pipeline to None, run_after=None
+[2022-08-11 19:47:48,320] {processor.py:161} INFO - Processing /opt/airflow/dags/dag-test.py took 0.336 seconds
+[2022-08-11 19:48:19,209] {processor.py:153} INFO - Started process (PID=510) to work on /opt/airflow/dags/dag-test.py
+[2022-08-11 19:48:19,211] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag-test.py for tasks to queue
+[2022-08-11 19:48:19,215] {logging_mixin.py:115} INFO - [2022-08-11 19:48:19,215] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag-test.py
+[2022-08-11 19:48:19,630] {processor.py:651} INFO - DAG(s) dict_keys(['ltv-pipeline']) retrieved from /opt/airflow/dags/dag-test.py
+[2022-08-11 19:48:19,653] {logging_mixin.py:115} INFO - [2022-08-11 19:48:19,653] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-11 19:48:19,668] {logging_mixin.py:115} INFO - [2022-08-11 19:48:19,667] {dag.py:2972} INFO - Setting next_dagrun for ltv-pipeline to None, run_after=None
+[2022-08-11 19:48:19,676] {processor.py:161} INFO - Processing /opt/airflow/dags/dag-test.py took 0.472 seconds
+[2022-08-11 19:48:50,147] {processor.py:153} INFO - Started process (PID=574) to work on /opt/airflow/dags/dag-test.py
+[2022-08-11 19:48:50,150] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag-test.py for tasks to queue
+[2022-08-11 19:48:50,152] {logging_mixin.py:115} INFO - [2022-08-11 19:48:50,152] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag-test.py
+[2022-08-11 19:48:50,639] {processor.py:651} INFO - DAG(s) dict_keys(['ltv-pipeline']) retrieved from /opt/airflow/dags/dag-test.py
+[2022-08-11 19:48:50,695] {logging_mixin.py:115} INFO - [2022-08-11 19:48:50,695] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-11 19:48:50,736] {logging_mixin.py:115} INFO - [2022-08-11 19:48:50,736] {dag.py:2972} INFO - Setting next_dagrun for ltv-pipeline to None, run_after=None
+[2022-08-11 19:48:50,761] {processor.py:161} INFO - Processing /opt/airflow/dags/dag-test.py took 0.621 seconds
+[2022-08-11 19:49:21,081] {processor.py:153} INFO - Started process (PID=636) to work on /opt/airflow/dags/dag-test.py
+[2022-08-11 19:49:21,083] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag-test.py for tasks to queue
+[2022-08-11 19:49:21,084] {logging_mixin.py:115} INFO - [2022-08-11 19:49:21,084] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag-test.py
+[2022-08-11 19:49:21,616] {processor.py:651} INFO - DAG(s) dict_keys(['ltv-pipeline']) retrieved from /opt/airflow/dags/dag-test.py
+[2022-08-11 19:49:21,651] {logging_mixin.py:115} INFO - [2022-08-11 19:49:21,650] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-11 19:49:21,675] {logging_mixin.py:115} INFO - [2022-08-11 19:49:21,675] {dag.py:2972} INFO - Setting next_dagrun for ltv-pipeline to None, run_after=None
+[2022-08-11 19:49:21,686] {processor.py:161} INFO - Processing /opt/airflow/dags/dag-test.py took 0.611 seconds
+[2022-08-11 19:49:51,791] {processor.py:153} INFO - Started process (PID=700) to work on /opt/airflow/dags/dag-test.py
+[2022-08-11 19:49:51,824] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag-test.py for tasks to queue
+[2022-08-11 19:49:51,827] {logging_mixin.py:115} INFO - [2022-08-11 19:49:51,827] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag-test.py
+[2022-08-11 19:49:52,496] {processor.py:651} INFO - DAG(s) dict_keys(['ltv-pipeline']) retrieved from /opt/airflow/dags/dag-test.py
+[2022-08-11 19:49:52,521] {logging_mixin.py:115} INFO - [2022-08-11 19:49:52,520] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-11 19:49:52,538] {logging_mixin.py:115} INFO - [2022-08-11 19:49:52,538] {dag.py:2972} INFO - Setting next_dagrun for ltv-pipeline to None, run_after=None
+[2022-08-11 19:49:52,548] {processor.py:161} INFO - Processing /opt/airflow/dags/dag-test.py took 0.776 seconds
+[2022-08-11 19:50:22,904] {processor.py:153} INFO - Started process (PID=752) to work on /opt/airflow/dags/dag-test.py
+[2022-08-11 19:50:22,906] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag-test.py for tasks to queue
+[2022-08-11 19:50:22,908] {logging_mixin.py:115} INFO - [2022-08-11 19:50:22,908] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag-test.py
+[2022-08-11 19:50:23,415] {processor.py:651} INFO - DAG(s) dict_keys(['ltv-pipeline']) retrieved from /opt/airflow/dags/dag-test.py
+[2022-08-11 19:50:23,435] {logging_mixin.py:115} INFO - [2022-08-11 19:50:23,435] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-11 19:50:23,449] {logging_mixin.py:115} INFO - [2022-08-11 19:50:23,449] {dag.py:2972} INFO - Setting next_dagrun for ltv-pipeline to None, run_after=None
+[2022-08-11 19:50:23,457] {processor.py:161} INFO - Processing /opt/airflow/dags/dag-test.py took 0.558 seconds
+[2022-08-11 19:50:53,804] {processor.py:153} INFO - Started process (PID=814) to work on /opt/airflow/dags/dag-test.py
+[2022-08-11 19:50:53,807] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag-test.py for tasks to queue
+[2022-08-11 19:50:53,809] {logging_mixin.py:115} INFO - [2022-08-11 19:50:53,809] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag-test.py
+[2022-08-11 19:50:54,322] {processor.py:651} INFO - DAG(s) dict_keys(['ltv-pipeline']) retrieved from /opt/airflow/dags/dag-test.py
+[2022-08-11 19:50:54,354] {logging_mixin.py:115} INFO - [2022-08-11 19:50:54,353] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-11 19:50:54,372] {logging_mixin.py:115} INFO - [2022-08-11 19:50:54,372] {dag.py:2972} INFO - Setting next_dagrun for ltv-pipeline to None, run_after=None
+[2022-08-11 19:50:54,381] {processor.py:161} INFO - Processing /opt/airflow/dags/dag-test.py took 0.583 seconds
+[2022-08-11 19:51:25,071] {processor.py:153} INFO - Started process (PID=877) to work on /opt/airflow/dags/dag-test.py
+[2022-08-11 19:51:25,074] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag-test.py for tasks to queue
+[2022-08-11 19:51:25,076] {logging_mixin.py:115} INFO - [2022-08-11 19:51:25,076] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag-test.py
+[2022-08-11 19:51:25,589] {processor.py:651} INFO - DAG(s) dict_keys(['ltv-pipeline']) retrieved from /opt/airflow/dags/dag-test.py
+[2022-08-11 19:51:25,620] {logging_mixin.py:115} INFO - [2022-08-11 19:51:25,620] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-11 19:51:25,637] {logging_mixin.py:115} INFO - [2022-08-11 19:51:25,637] {dag.py:2972} INFO - Setting next_dagrun for ltv-pipeline to None, run_after=None
+[2022-08-11 19:51:25,645] {processor.py:161} INFO - Processing /opt/airflow/dags/dag-test.py took 0.585 seconds
+[2022-08-11 19:51:56,586] {processor.py:153} INFO - Started process (PID=939) to work on /opt/airflow/dags/dag-test.py
+[2022-08-11 19:51:56,588] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag-test.py for tasks to queue
+[2022-08-11 19:51:56,589] {logging_mixin.py:115} INFO - [2022-08-11 19:51:56,589] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag-test.py
+[2022-08-11 19:51:56,865] {processor.py:651} INFO - DAG(s) dict_keys(['ltv-pipeline']) retrieved from /opt/airflow/dags/dag-test.py
+[2022-08-11 19:51:56,885] {logging_mixin.py:115} INFO - [2022-08-11 19:51:56,884] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-11 19:51:56,896] {logging_mixin.py:115} INFO - [2022-08-11 19:51:56,896] {dag.py:2972} INFO - Setting next_dagrun for ltv-pipeline to None, run_after=None
+[2022-08-11 19:51:56,903] {processor.py:161} INFO - Processing /opt/airflow/dags/dag-test.py took 0.322 seconds
+[2022-08-11 19:52:27,056] {processor.py:153} INFO - Started process (PID=993) to work on /opt/airflow/dags/dag-test.py
+[2022-08-11 19:52:27,058] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag-test.py for tasks to queue
+[2022-08-11 19:52:27,067] {logging_mixin.py:115} INFO - [2022-08-11 19:52:27,067] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag-test.py
+[2022-08-11 19:52:27,501] {processor.py:651} INFO - DAG(s) dict_keys(['ltv-pipeline']) retrieved from /opt/airflow/dags/dag-test.py
+[2022-08-11 19:52:27,520] {logging_mixin.py:115} INFO - [2022-08-11 19:52:27,520] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-11 19:52:27,535] {logging_mixin.py:115} INFO - [2022-08-11 19:52:27,535] {dag.py:2972} INFO - Setting next_dagrun for ltv-pipeline to None, run_after=None
+[2022-08-11 19:52:27,544] {processor.py:161} INFO - Processing /opt/airflow/dags/dag-test.py took 0.494 seconds
+[2022-08-11 19:52:57,944] {processor.py:153} INFO - Started process (PID=1056) to work on /opt/airflow/dags/dag-test.py
+[2022-08-11 19:52:57,946] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag-test.py for tasks to queue
+[2022-08-11 19:52:57,948] {logging_mixin.py:115} INFO - [2022-08-11 19:52:57,948] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag-test.py
+[2022-08-11 19:52:58,404] {processor.py:651} INFO - DAG(s) dict_keys(['ltv-pipeline']) retrieved from /opt/airflow/dags/dag-test.py
+[2022-08-11 19:52:58,423] {logging_mixin.py:115} INFO - [2022-08-11 19:52:58,423] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-11 19:52:58,436] {logging_mixin.py:115} INFO - [2022-08-11 19:52:58,436] {dag.py:2972} INFO - Setting next_dagrun for ltv-pipeline to None, run_after=None
+[2022-08-11 19:52:58,446] {processor.py:161} INFO - Processing /opt/airflow/dags/dag-test.py took 0.508 seconds
+[2022-08-11 19:53:29,031] {processor.py:153} INFO - Started process (PID=1120) to work on /opt/airflow/dags/dag-test.py
+[2022-08-11 19:53:29,033] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag-test.py for tasks to queue
+[2022-08-11 19:53:29,034] {logging_mixin.py:115} INFO - [2022-08-11 19:53:29,034] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag-test.py
+[2022-08-11 19:53:29,408] {processor.py:651} INFO - DAG(s) dict_keys(['ltv-pipeline']) retrieved from /opt/airflow/dags/dag-test.py
+[2022-08-11 19:53:29,431] {logging_mixin.py:115} INFO - [2022-08-11 19:53:29,430] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-11 19:53:29,445] {logging_mixin.py:115} INFO - [2022-08-11 19:53:29,445] {dag.py:2972} INFO - Setting next_dagrun for ltv-pipeline to None, run_after=None
+[2022-08-11 19:53:29,453] {processor.py:161} INFO - Processing /opt/airflow/dags/dag-test.py took 0.428 seconds
+[2022-08-11 19:54:00,388] {processor.py:153} INFO - Started process (PID=1182) to work on /opt/airflow/dags/dag-test.py
+[2022-08-11 19:54:00,391] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag-test.py for tasks to queue
+[2022-08-11 19:54:00,393] {logging_mixin.py:115} INFO - [2022-08-11 19:54:00,393] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag-test.py
+[2022-08-11 19:54:00,688] {processor.py:651} INFO - DAG(s) dict_keys(['ltv-pipeline']) retrieved from /opt/airflow/dags/dag-test.py
+[2022-08-11 19:54:00,708] {logging_mixin.py:115} INFO - [2022-08-11 19:54:00,708] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-11 19:54:00,722] {logging_mixin.py:115} INFO - [2022-08-11 19:54:00,722] {dag.py:2972} INFO - Setting next_dagrun for ltv-pipeline to None, run_after=None
+[2022-08-11 19:54:00,731] {processor.py:161} INFO - Processing /opt/airflow/dags/dag-test.py took 0.349 seconds
+[2022-08-11 19:54:31,063] {processor.py:153} INFO - Started process (PID=1245) to work on /opt/airflow/dags/dag-test.py
+[2022-08-11 19:54:31,065] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag-test.py for tasks to queue
+[2022-08-11 19:54:31,067] {logging_mixin.py:115} INFO - [2022-08-11 19:54:31,067] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag-test.py
+[2022-08-11 19:54:31,369] {processor.py:651} INFO - DAG(s) dict_keys(['ltv-pipeline']) retrieved from /opt/airflow/dags/dag-test.py
+[2022-08-11 19:54:31,387] {logging_mixin.py:115} INFO - [2022-08-11 19:54:31,386] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-11 19:54:31,401] {logging_mixin.py:115} INFO - [2022-08-11 19:54:31,401] {dag.py:2972} INFO - Setting next_dagrun for ltv-pipeline to None, run_after=None
+[2022-08-11 19:54:31,409] {processor.py:161} INFO - Processing /opt/airflow/dags/dag-test.py took 0.351 seconds
+[2022-08-11 19:55:02,332] {processor.py:153} INFO - Started process (PID=1308) to work on /opt/airflow/dags/dag-test.py
+[2022-08-11 19:55:02,343] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag-test.py for tasks to queue
+[2022-08-11 19:55:02,353] {logging_mixin.py:115} INFO - [2022-08-11 19:55:02,353] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag-test.py
+[2022-08-11 19:55:03,093] {processor.py:651} INFO - DAG(s) dict_keys(['ltv-pipeline']) retrieved from /opt/airflow/dags/dag-test.py
+[2022-08-11 19:55:03,119] {logging_mixin.py:115} INFO - [2022-08-11 19:55:03,119] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-11 19:55:03,137] {logging_mixin.py:115} INFO - [2022-08-11 19:55:03,137] {dag.py:2972} INFO - Setting next_dagrun for ltv-pipeline to None, run_after=None
+[2022-08-11 19:55:03,147] {processor.py:161} INFO - Processing /opt/airflow/dags/dag-test.py took 0.834 seconds
+[2022-08-11 19:55:33,861] {processor.py:153} INFO - Started process (PID=1362) to work on /opt/airflow/dags/dag-test.py
+[2022-08-11 19:55:33,864] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag-test.py for tasks to queue
+[2022-08-11 19:55:33,867] {logging_mixin.py:115} INFO - [2022-08-11 19:55:33,867] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag-test.py
+[2022-08-11 19:55:34,320] {processor.py:651} INFO - DAG(s) dict_keys(['ltv-pipeline']) retrieved from /opt/airflow/dags/dag-test.py
+[2022-08-11 19:55:34,374] {logging_mixin.py:115} INFO - [2022-08-11 19:55:34,374] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-08-11 19:55:34,397] {logging_mixin.py:115} INFO - [2022-08-11 19:55:34,397] {dag.py:2972} INFO - Setting next_dagrun for ltv-pipeline to None, run_after=None
+[2022-08-11 19:55:34,407] {processor.py:161} INFO - Processing /opt/airflow/dags/dag-test.py took 0.552 seconds
+[2022-08-11 19:56:05,478] {processor.py:153} INFO - Started process (PID=1425) to work on /opt/airflow/dags/dag-test.py
+[2022-08-11 19:56:05,481] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag-test.py for tasks to queue
+[2022-08-11 19:56:05,483] {logging_mixin.py:115} INFO - [2022-08-11 19:56:05,483] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/dag-test.py

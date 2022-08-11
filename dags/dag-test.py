@@ -200,7 +200,7 @@ def _transformations():
 				WHEN fuel_type in ('Diesel','Diesel; Unleaded') THEN 'diesel'
 				WHEN fuel_type in ('Compressed Natural Gas') THEN 'gas'
 				WHEN fuel_type in ('Electric','Electric / Hydrogen') then 'electric'
-				ELSE NULL END as new_fuel_type;
+				ELSE NULL END;
                 """
 
     post_hook.run(new_fuel_query)
