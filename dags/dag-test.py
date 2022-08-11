@@ -139,8 +139,42 @@ def query_table():
     print(results.head(10))
 
 
+types = {
+    'gasoline' : ["E85 / Unleaded",'Unleaded','Premium Unleaded',
+                'Premium Unleaded; Unleaded','Premium Unleaded / Unleaded',
+                'Unleaded; Unleaded / E85','Unleaded / E85','E85 / Premium Unleaded',
+                'Premium Unleaded; Premium Unleaded / E85','Premium Unleaded / Unleaded; Unleaded'],
+    'hybrid' : ['Electric / Premium Unleaded','Unleaded / Electric','Electric / Unleaded',
+                'Premium Unleaded / Natural Gas','Unleaded; Unleaded / Natural Gas'
+                'Compressed Natural Gas; Unleaded','Electric / Premium Unleaded; Electric / Unleaded'],
+    'diesel' : ['Diesel','Diesel; Unleaded'],
+    'gas':['Compressed Natural Gas'],
+    'electric':['Electric','Electric / Hydrogen']
 
-def transformations():
+}
+
+def map_fuels(x,types):
+    for full_type in types:
+        if x in types[full_type]:
+            return full_type
+
+
+
+def _remove_duplicates ():
+    post_hook = PostgresHook(postgres_conn_id = 'postgres')
+
+    query = """
+            with no_dups as (
+            select * 
+            ,row_number() over(PARTITION by vin order by miles desc, miles desc) as row_number
+            ,rank() over(PARTITION by vin order by miles desc) as rank
+            from vehicles
+            )
+            select * from no_dups where row_number =1
+    """
+
+
+def _transformations():
 
     post_hook = PostgresHook(postgres_conn_id = 'postgres')
 
@@ -153,8 +187,56 @@ def transformations():
     results = post_hook.get_pandas_df("select miles_range,count(*) from vehicles group by miles_range")
     print(results.T) 
 
-    
+    new_fuel_query = """
+                ALTER TABLE vehicles ADD COLUMN new_fuel_type  VARCHAR;
 
+                UPDATE vehicles 
+                SET new_fuel_type =
+                CASE WHEN fuel_type in ('E85 / Unleaded','Unleaded','Premium Unleaded',
+                'Premium Unleaded; Unleaded','Premium Unleaded / Unleaded',
+                'Unleaded; Unleaded / E85','Unleaded / E85','E85 / Premium Unleaded',
+                'Premium Unleaded; Premium Unleaded / E85','Premium Unleaded / Unleaded; Unleaded') THEN 'gasoline'
+				WHEN fuel_type in ('Electric / Premium Unleaded','Unleaded / Electric','Electric / Unleaded',
+                'Premium Unleaded / Natural Gas','Unleaded; Unleaded / Natural Gas'
+                'Compressed Natural Gas; Unleaded','Electric / Premium Unleaded; Electric / Unleaded') THEN 'hybrid'
+				WHEN fuel_type in ('Diesel','Diesel; Unleaded') THEN 'diesel'
+				WHEN fuel_type in ('Compressed Natural Gas') THEN 'gas'
+				WHEN fuel_type in ('Electric','Electric / Hydrogen') then 'electric'
+				ELSE NULL END as new_fuel_type;
+                """
+
+    post_hook.run(new_fuel_query)
+
+    average_miles_query = """
+                        ALTER TABLE vehicles
+                        ADD COLUMN average_miles  FLOAT;
+                        UPDATE vehicles t1
+                        SET average_miles = t2.average_miles
+                        FROM 
+                        (select make,model,year, round(avg(miles),2) as average_miles from vehicles group by make,model,year) t2
+                        WHERE t1.make = t2.make
+                        AND t1.model = t2.model
+                        AND t1.year = t2.year
+    
+                        """
+
+    post_hook.run(average_miles_query)
+
+    sellers_table_query = """
+                            DROP TABLE IF EXISTS  vehicles_sellers;
+                            CREATE  TABLE vehicles_sellers AS 
+
+                            with sellers_vehicles as (
+                            select seller_name,street,vin from vehicles group by 1,2,3 
+                            )
+
+                            select seller_name,street, count(*) as amount_vehicles from sellers_vehicles
+                            group by 1,2 
+                            HAVING count(*)>=5;
+    """
+
+
+    post_hook.run(sellers_table_query)
 
     
 
@@ -191,6 +273,11 @@ with DAG('ltv-pipeline', start_date = datetime(2022,8,2),schedule_interval = Non
     query_table = PythonOperator(
         task_id = 'query-table',
         python_callable = query_table
+
+    )
+    transformations = PythonOperator(
+        task_id = 'transformation',
+        python_callable = _transformations
 
     )
 
