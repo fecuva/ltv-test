@@ -63,9 +63,7 @@ def _preprocess_data():
     print(f'The file headers: {", ".join(df.columns.to_list())}')
 
 
-def query_table():
-    print('Testing hook')
-
+def _general_statistics():
     post_hook = PostgresHook(postgres_conn_id = 'postgres')
 
     results = post_hook.get_records('SELECT * FROM vehicles limit 10')   
@@ -172,7 +170,7 @@ def _remove_duplicates ():
             )
             select * from no_dups where row_number =1
     """
-
+    post_hook.run(query)
 
 def _transformations():
 
@@ -216,7 +214,7 @@ def _transformations():
                         (select make,model,year, round(avg(miles),2) as average_miles from vehicles group by make,model,year) t2
                         WHERE t1.make = t2.make
                         AND t1.model = t2.model
-                        AND t1.year = t2.year
+                        AND t1.year = t2.year;
     
                         """
 
@@ -270,9 +268,14 @@ with DAG('ltv-pipeline', start_date = datetime(2022,8,2),schedule_interval = Non
         python_callable = _insert_data
     )
 
-    query_table = PythonOperator(
-        task_id = 'query-table',
-        python_callable = query_table
+    general_statistics = PythonOperator(
+        task_id = 'general-statistics',
+        python_callable = _general_statistics
+
+    )
+    remove_duplicates = PythonOperator(
+        task_id = 'remove-duplicates',
+        python_callable = _remove_duplicates
 
     )
     transformations = PythonOperator(
@@ -281,4 +284,4 @@ with DAG('ltv-pipeline', start_date = datetime(2022,8,2),schedule_interval = Non
 
     )
 
-drop_table >> decompress_file >> pre_process >> create_table >> insert_data >> query_table
+drop_table >> decompress_file >> pre_process >> create_table >> insert_data >> general_statistics >> remove_duplicates >> transformations
