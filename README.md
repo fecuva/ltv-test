@@ -43,3 +43,11 @@ The following is a diagram for a mysql schema, based on the data provided:
 ![Tux, the Linux mascot](drawSQL-export-2022-08-16_20_01.png)
 
 
+## Extra Credits
+
+For the extra credits instead of having to ingest a table that contains the information, I decide to look for a vin decode api that returns a json with the vin information, which I parsed to map the vin into the desire option, I limit this part to a 1000 records, so the output would be ready faster. The logic for the mapping is inside the dag functions.
+
+### Author
+Author of the dag:
+
+ **Luis Felipe Cubero Vargas**
