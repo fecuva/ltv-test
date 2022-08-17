@@ -239,7 +239,7 @@ def _transformations():
     
 
 
-with DAG('ltv-pipeline', start_date = datetime(2022,8,2),schedule_interval = None,catchup=False) as dag:
+with DAG('ltv-pipeline', start_date = datetime(2022,8,2),schedule_interval = None,catchup=False,tags=['ltv']) as dag:
 
     drop_table = PostgresOperator(
         task_id = 'drop_table',
